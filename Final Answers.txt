@@ -1,8 +1,4 @@
-Questions:
-
-1. A vendor is trying to connect to a server we publicly expose (assume we are not using VPN). 
-   When asked for his public IP from which he will be connecting, the vendor provides us with 
-   the following IP 192.168.0.100, what should be our next steps?
+Answers:
 
 1.i. Go to Server Manager > Windows Firewall Domain > Advanced Settings > Inbound Rules
     Click New Rule > Program 
