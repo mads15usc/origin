@@ -18,7 +18,7 @@ Questions:
 2. Get-ADComputer -Filter 'ObjectClass -eq "Computer"' | Select -Expand DNSHostName
 
 
-3. First i will ping other websites. if still request time out then i have to ping DNS IP or check the Physical router or firewall
+3. First i will ping other websites like google.com or yahoo.com, if still request time out then i have to ping DNS IP. check the Physical router or firewall
    if still up and running. If still running then call ISP to check the connectivity from their line going to the company.
    
 
