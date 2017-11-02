@@ -1,0 +1,24 @@
+Questions:
+
+1. A vendor is trying to connect to a server we publicly expose (assume we are not using VPN). 
+   When asked for his public IP from which he will be connecting, the vendor provides us with 
+   the following IP 192.168.0.100, what should be our next steps?
+
+1.i. Go to Server Manager > Windows Firewall Domain > Advanced Settings > Inbound Rules
+    Click New Rule > Program 
+    Select Port > Select Next
+    Specific local ports: 3389    
+    Specific IP Address: 192.168.0.100
+
+    
+1.ii. new-netfirewallrule -displayname BeeServer -direction inbound -action allow -protocol tcp -RemotePort 3389 -RemoteAddress 192.168.0.100
+
+
+
+2. Get-ADComputer -Filter 'ObjectClass -eq "Computer"' | Select -Expand DNSHostName
+
+
+3. First i will ping other websites. if still request time out then i have to ping DNS IP or check the Physical router or firewall
+   if still up and running. If still running then call ISP to check the connectivity from their line going to the company.
+   
+
